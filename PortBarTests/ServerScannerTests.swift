@@ -1,5 +1,5 @@
 import XCTest
-@testable import ServerBar
+@testable import PortBar
 
 final class ServerScannerTests: XCTestCase {
     func testParsesAndDeduplicatesListeningPorts() {

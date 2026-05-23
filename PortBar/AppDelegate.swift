@@ -19,7 +19,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func configureStatusItem() {
         let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        item.button?.image = NSImage(systemSymbolName: "server.rack", accessibilityDescription: "ServerBar")
+        item.button?.image = NSImage(systemSymbolName: "server.rack", accessibilityDescription: "PortBar")
         item.button?.imagePosition = .imageLeading
         item.button?.action = #selector(togglePopover)
         item.button?.target = self

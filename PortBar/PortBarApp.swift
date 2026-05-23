@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ServerBarApp: App {
+struct PortBarApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
 
     var body: some Scene {

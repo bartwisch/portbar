@@ -9,39 +9,39 @@ settings:
     CODE_SIGN_IDENTITY: "-"
     MACOSX_DEPLOYMENT_TARGET: "14.0"
 targets:
-  ServerBar:
+  PortBar:
     type: application
     platform: macOS
     deploymentTarget: "14.0"
     sources:
-      - ServerBar
+      - PortBar
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.christoph.ServerBar
+        PRODUCT_BUNDLE_IDENTIFIER: com.christoph.PortBar
         PRODUCT_NAME: PortBar
-        PRODUCT_MODULE_NAME: ServerBar
-        INFOPLIST_FILE: ServerBar/Info.plist
+        INFOPLIST_FILE: PortBar/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ENABLE_USER_SCRIPT_SANDBOXING: NO
-  ServerBarTests:
+  PortBarTests:
     type: bundle.unit-test
     platform: macOS
     deploymentTarget: "14.0"
     sources:
-      - ServerBarTests
+      - PortBarTests
     dependencies:
-      - target: ServerBar
+      - target: PortBar
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.christoph.ServerBarTests
+        PRODUCT_BUNDLE_IDENTIFIER: com.christoph.PortBarTests
         GENERATE_INFOPLIST_FILE: YES
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/PortBar.app/Contents/MacOS/PortBar"
         BUNDLE_LOADER: "$(TEST_HOST)"
 schemes:
-  ServerBar:
+  PortBar:
     build:
       targets:
-        ServerBar: all
-        ServerBarTests: [test]
+        PortBar: all
+        PortBarTests: [test]
     test:
       targets:
-        - ServerBarTests
+        - PortBarTests

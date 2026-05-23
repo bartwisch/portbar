@@ -7,140 +7,144 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		183C5398F67D1825B805F6AE /* ServerBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD62981EB981842BA95FEB8 /* ServerBarApp.swift */; };
-		4B2729E2947845A468A20019 /* ServerScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B891817C6D17F2A5ECAA9 /* ServerScanner.swift */; };
-		62DF7937C2FF50317885759E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25E35593586DB4DD147E8A /* AppDelegate.swift */; };
-		A0BAE0CF52DDF15CCEC7005C /* ServerProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02956912B23A755AAAA4DE78 /* ServerProcess.swift */; };
-		DCE0F01FF3790A1772DC06C7 /* LoginItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6882FC7F2F943C9A6D6DFC8 /* LoginItemController.swift */; };
-		DE0637BACF5FEF61DA6C82D5 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D321A03B091523A7542E75 /* ServerListView.swift */; };
-		F98B7155A9E68483FF05CB3C /* ServerScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E8583450EBBFF0A2D60571 /* ServerScannerTests.swift */; };
+		253B0C7979D02F9F969C4F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9CA87B0583A92B6ABD637 /* Assets.xcassets */; };
+		3B0DC17807EA44941BE8C983 /* ServerProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A19F412FDF0FAECD9E4A21 /* ServerProcess.swift */; };
+		5310406A42BD16E2A5963325 /* ServerScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591596D6ED887FD944C1E882 /* ServerScanner.swift */; };
+		B0A44824E1EDE659CB2BA946 /* LoginItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE5C0E7C278005F3EF7A3E6 /* LoginItemController.swift */; };
+		B5D074CA6FB50CB0AEDB2C25 /* PortBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8D67458DAD0D675B5B4B3E /* PortBarApp.swift */; };
+		BB80F8B0958C9542CBBF57D0 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ABE734DB0EA976087A1021 /* ServerListView.swift */; };
+		F22B9633AAD75C42F2BA1E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7599B71464656ED010C1B32 /* AppDelegate.swift */; };
+		FDAE03F25F4E948DE95BEC5D /* ServerScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579ABB5599D435E75AB730BE /* ServerScannerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		472B492678733736E2C2F359 /* PBXContainerItemProxy */ = {
+		1CD4F37857646F6A31353407 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE584C46B4F7322B4E34DB99 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CFD9B7611FC1E0DF44B819FA;
-			remoteInfo = ServerBar;
+			remoteGlobalIDString = 06A56E4DF9C1EF5C0A276306;
+			remoteInfo = PortBar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02956912B23A755AAAA4DE78 /* ServerProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerProcess.swift; sourceTree = "<group>"; };
-		3E9E9488672E76E238F3E31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4A6199D6AC7E88AFB60CF40C /* ServerBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65E8583450EBBFF0A2D60571 /* ServerScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerScannerTests.swift; sourceTree = "<group>"; };
-		7A5748395ADA3A0EFE7D0560 /* ServerBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServerBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F25E35593586DB4DD147E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3D321A03B091523A7542E75 /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
-		D60B891817C6D17F2A5ECAA9 /* ServerScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerScanner.swift; sourceTree = "<group>"; };
-		DDD62981EB981842BA95FEB8 /* ServerBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerBarApp.swift; sourceTree = "<group>"; };
-		E6882FC7F2F943C9A6D6DFC8 /* LoginItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemController.swift; sourceTree = "<group>"; };
+		54812F47DF287EA3EA00F6C5 /* PortBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		579ABB5599D435E75AB730BE /* ServerScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerScannerTests.swift; sourceTree = "<group>"; };
+		591596D6ED887FD944C1E882 /* ServerScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerScanner.swift; sourceTree = "<group>"; };
+		6FF9CA87B0583A92B6ABD637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABB39E45F84B837B8413EB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C6FC925045B63138F899E2A4 /* PortBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7599B71464656ED010C1B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC8D67458DAD0D675B5B4B3E /* PortBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortBarApp.swift; sourceTree = "<group>"; };
+		CFE5C0E7C278005F3EF7A3E6 /* LoginItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemController.swift; sourceTree = "<group>"; };
+		F2ABE734DB0EA976087A1021 /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
+		F3A19F412FDF0FAECD9E4A21 /* ServerProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerProcess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		094E9EC956E025C3AB7B872D /* ServerBar */ = {
-			isa = PBXGroup;
-			children = (
-				8F25E35593586DB4DD147E8A /* AppDelegate.swift */,
-				3E9E9488672E76E238F3E31E /* Info.plist */,
-				DDD62981EB981842BA95FEB8 /* ServerBarApp.swift */,
-				10068C81E253A9FA53FB98F0 /* Models */,
-				2BD6F9D2BE28945E5B23E51D /* Services */,
-				EDAB795988981118B26F3A6D /* Views */,
-			);
-			path = ServerBar;
-			sourceTree = "<group>";
-		};
-		10068C81E253A9FA53FB98F0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				02956912B23A755AAAA4DE78 /* ServerProcess.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		16FF8B11FAFE5005B58D0FEE = {
 			isa = PBXGroup;
 			children = (
-				094E9EC956E025C3AB7B872D /* ServerBar */,
-				3F7D3FB1CB3852AA8209225E /* ServerBarTests */,
+				806FC17E799C7FAC104D46EA /* PortBar */,
+				2DA0C8AB3C59FBEB0979A097 /* PortBarTests */,
 				D3279B65E82BBFB2375BD5EB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2BD6F9D2BE28945E5B23E51D /* Services */ = {
+		2DA0C8AB3C59FBEB0979A097 /* PortBarTests */ = {
 			isa = PBXGroup;
 			children = (
-				E6882FC7F2F943C9A6D6DFC8 /* LoginItemController.swift */,
-				D60B891817C6D17F2A5ECAA9 /* ServerScanner.swift */,
+				579ABB5599D435E75AB730BE /* ServerScannerTests.swift */,
+			);
+			path = PortBarTests;
+			sourceTree = "<group>";
+		};
+		78A926A33F3B126BE25F7A2C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CFE5C0E7C278005F3EF7A3E6 /* LoginItemController.swift */,
+				591596D6ED887FD944C1E882 /* ServerScanner.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		3F7D3FB1CB3852AA8209225E /* ServerBarTests */ = {
+		806FC17E799C7FAC104D46EA /* PortBar */ = {
 			isa = PBXGroup;
 			children = (
-				65E8583450EBBFF0A2D60571 /* ServerScannerTests.swift */,
+				C7599B71464656ED010C1B32 /* AppDelegate.swift */,
+				6FF9CA87B0583A92B6ABD637 /* Assets.xcassets */,
+				ABB39E45F84B837B8413EB7A /* Info.plist */,
+				CC8D67458DAD0D675B5B4B3E /* PortBarApp.swift */,
+				9A71C68917F2ED3A97976676 /* Models */,
+				78A926A33F3B126BE25F7A2C /* Services */,
+				C03582E58D7C2325D99003F3 /* Views */,
 			);
-			path = ServerBarTests;
+			path = PortBar;
+			sourceTree = "<group>";
+		};
+		9A71C68917F2ED3A97976676 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3A19F412FDF0FAECD9E4A21 /* ServerProcess.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C03582E58D7C2325D99003F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2ABE734DB0EA976087A1021 /* ServerListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D3279B65E82BBFB2375BD5EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A6199D6AC7E88AFB60CF40C /* ServerBar.app */,
-				7A5748395ADA3A0EFE7D0560 /* ServerBarTests.xctest */,
+				C6FC925045B63138F899E2A4 /* PortBar.app */,
+				54812F47DF287EA3EA00F6C5 /* PortBarTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EDAB795988981118B26F3A6D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A3D321A03B091523A7542E75 /* ServerListView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		629E402C7542984C41FA0276 /* ServerBarTests */ = {
+		06A56E4DF9C1EF5C0A276306 /* PortBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8A842C353B60805F6EC6079 /* Build configuration list for PBXNativeTarget "ServerBarTests" */;
+			buildConfigurationList = 52F305EFEE4AD67FD5AEF0C1 /* Build configuration list for PBXNativeTarget "PortBar" */;
 			buildPhases = (
-				655636F1500E1DCCA66E6E4A /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D44428328E4F94F59BBFB9FD /* PBXTargetDependency */,
-			);
-			name = ServerBarTests;
-			packageProductDependencies = (
-			);
-			productName = ServerBarTests;
-			productReference = 7A5748395ADA3A0EFE7D0560 /* ServerBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CFD9B7611FC1E0DF44B819FA /* ServerBar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F72EBAC892D674C34AB424D0 /* Build configuration list for PBXNativeTarget "ServerBar" */;
-			buildPhases = (
-				9B161025619A7758BCAFB099 /* Sources */,
+				5991BD68562B756015E207A7 /* Sources */,
+				EC46F0F6CC631C48173CC960 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ServerBar;
+			name = PortBar;
 			packageProductDependencies = (
 			);
-			productName = ServerBar;
-			productReference = 4A6199D6AC7E88AFB60CF40C /* ServerBar.app */;
+			productName = PortBar;
+			productReference = C6FC925045B63138F899E2A4 /* PortBar.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0E833816EA5318DE2FBE5930 /* PortBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D741C486B81B3501EB551050 /* Build configuration list for PBXNativeTarget "PortBarTests" */;
+			buildPhases = (
+				142C81D932FDE7025803875F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49A63849D8FED63DEDD97CC4 /* PBXTargetDependency */,
+			);
+			name = PortBarTests;
+			packageProductDependencies = (
+			);
+			productName = PortBarTests;
+			productReference = 54812F47DF287EA3EA00F6C5 /* PortBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -151,10 +155,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					629E402C7542984C41FA0276 = {
+					06A56E4DF9C1EF5C0A276306 = {
 						ProvisioningStyle = Manual;
 					};
-					CFD9B7611FC1E0DF44B819FA = {
+					0E833816EA5318DE2FBE5930 = {
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -173,64 +177,93 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CFD9B7611FC1E0DF44B819FA /* ServerBar */,
-				629E402C7542984C41FA0276 /* ServerBarTests */,
+				06A56E4DF9C1EF5C0A276306 /* PortBar */,
+				0E833816EA5318DE2FBE5930 /* PortBarTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		655636F1500E1DCCA66E6E4A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		EC46F0F6CC631C48173CC960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F98B7155A9E68483FF05CB3C /* ServerScannerTests.swift in Sources */,
+				253B0C7979D02F9F969C4F37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B161025619A7758BCAFB099 /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		142C81D932FDE7025803875F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62DF7937C2FF50317885759E /* AppDelegate.swift in Sources */,
-				DCE0F01FF3790A1772DC06C7 /* LoginItemController.swift in Sources */,
-				183C5398F67D1825B805F6AE /* ServerBarApp.swift in Sources */,
-				DE0637BACF5FEF61DA6C82D5 /* ServerListView.swift in Sources */,
-				A0BAE0CF52DDF15CCEC7005C /* ServerProcess.swift in Sources */,
-				4B2729E2947845A468A20019 /* ServerScanner.swift in Sources */,
+				FDAE03F25F4E948DE95BEC5D /* ServerScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5991BD68562B756015E207A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22B9633AAD75C42F2BA1E3D /* AppDelegate.swift in Sources */,
+				B0A44824E1EDE659CB2BA946 /* LoginItemController.swift in Sources */,
+				B5D074CA6FB50CB0AEDB2C25 /* PortBarApp.swift in Sources */,
+				BB80F8B0958C9542CBBF57D0 /* ServerListView.swift in Sources */,
+				3B0DC17807EA44941BE8C983 /* ServerProcess.swift in Sources */,
+				5310406A42BD16E2A5963325 /* ServerScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D44428328E4F94F59BBFB9FD /* PBXTargetDependency */ = {
+		49A63849D8FED63DEDD97CC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CFD9B7611FC1E0DF44B819FA /* ServerBar */;
-			targetProxy = 472B492678733736E2C2F359 /* PBXContainerItemProxy */;
+			target = 06A56E4DF9C1EF5C0A276306 /* PortBar */;
+			targetProxy = 1CD4F37857646F6A31353407 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		122CF0ABFAA7AC924B492B09 /* Debug */ = {
+		2B9E4887E1BB87E0224F24B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = PortBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.ServerBarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.PortBar;
+				PRODUCT_NAME = PortBar;
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortBar.app/Contents/MacOS/PortBar";
+			};
+			name = Release;
+		};
+		4FA5098E61AA0FA103EDF9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = PortBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.PortBar;
+				PRODUCT_NAME = PortBar;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		42F1FEEB3F3771E4E6A10EED /* Release */ = {
+		556AA1F6C3C559AE3A08BD1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -242,7 +275,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.ServerBarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.PortBarTests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortBar.app/Contents/MacOS/PortBar";
 			};
@@ -371,47 +404,36 @@
 			};
 			name = Release;
 		};
-		799C46A27EABFAC78BF307B7 /* Debug */ = {
+		9E14D87CB3AF00C7F9A1EF57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = ServerBar/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.ServerBar;
-				PRODUCT_MODULE_NAME = ServerBar;
-				PRODUCT_NAME = PortBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.PortBarTests;
 				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortBar.app/Contents/MacOS/PortBar";
 			};
 			name = Debug;
-		};
-		94F935CD2A5DE585350F97AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = ServerBar/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.ServerBar;
-				PRODUCT_MODULE_NAME = ServerBar;
-				PRODUCT_NAME = PortBar;
-				SDKROOT = macosx;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		52F305EFEE4AD67FD5AEF0C1 /* Build configuration list for PBXNativeTarget "PortBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA5098E61AA0FA103EDF9E2 /* Debug */,
+				2B9E4887E1BB87E0224F24B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		60234275A7C7AB727BC40ACA /* Build configuration list for PBXProject "PortBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -421,20 +443,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D8A842C353B60805F6EC6079 /* Build configuration list for PBXNativeTarget "ServerBarTests" */ = {
+		D741C486B81B3501EB551050 /* Build configuration list for PBXNativeTarget "PortBarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				122CF0ABFAA7AC924B492B09 /* Debug */,
-				42F1FEEB3F3771E4E6A10EED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		F72EBAC892D674C34AB424D0 /* Build configuration list for PBXNativeTarget "ServerBar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				799C46A27EABFAC78BF307B7 /* Debug */,
-				94F935CD2A5DE585350F97AE /* Release */,
+				9E14D87CB3AF00C7F9A1EF57 /* Debug */,
+				556AA1F6C3C559AE3A08BD1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

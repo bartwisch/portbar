@@ -22,16 +22,32 @@ struct ServerListView: View {
     @ObservedObject var scanner: ServerScanner
     let onQuit: () -> Void
 
+    @AppStorage("autoRefreshEnabled") private var autoRefreshEnabled = true
+    @AppStorage("autoRefreshInterval") private var autoRefreshInterval = 5.0
+    @AppStorage("forceKillEnabled") private var forceKillEnabled = true
+    @AppStorage("ignoredProcessNames") private var ignoredProcessNames = "airplayxpchelper,controlcenter,google drive,rapportd,sharingd"
+    @AppStorage("defaultFilter") private var defaultFilter = ServerFilter.development.rawValue
+
     @StateObject private var loginItemController = LoginItemController()
     @State private var filter: ServerFilter = .development
+    @State private var isShowingSettings = false
     @State private var pendingStop: ServerProcess?
+    @State private var refreshTask: Task<Void, Never>?
 
     private var visibleServers: [ServerProcess] {
-        switch filter {
+        let ignoredNames = ignoredProcessNames
+            .split(separator: ",")
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() }
+            .filter { !$0.isEmpty }
+        let unignoredServers = scanner.servers.filter { server in
+            !ignoredNames.contains(server.processName.lowercased())
+        }
+
+        return switch filter {
         case .development:
-            scanner.servers.filter(\.isLikelyDevelopmentServer)
+            unignoredServers.filter(\.isLikelyDevelopmentServer)
         case .all:
-            scanner.servers
+            unignoredServers
         }
     }
 
@@ -48,12 +64,25 @@ struct ServerListView: View {
         .alert(item: $pendingStop) { server in
             Alert(
                 title: Text("Server stoppen?"),
-                message: Text("\(server.processName) (PID \(server.pid)) auf Port \(server.port) wird beendet."),
+                message: Text(stopMessage(for: server)),
                 primaryButton: .destructive(Text("Stoppen")) {
-                    scanner.stop(server)
+                    scanner.stop(server, forceAfterDelay: forceKillEnabled)
                 },
                 secondaryButton: .cancel(Text("Abbrechen"))
             )
+        }
+        .onAppear {
+            filter = ServerFilter(rawValue: defaultFilter) ?? .development
+            startAutoRefresh()
+        }
+        .onDisappear {
+            stopAutoRefresh()
+        }
+        .onChange(of: autoRefreshEnabled) { _, _ in
+            startAutoRefresh()
+        }
+        .onChange(of: autoRefreshInterval) { _, _ in
+            startAutoRefresh()
         }
     }
 
@@ -71,6 +100,23 @@ struct ServerListView: View {
             }
 
             Spacer()
+
+            Button {
+                isShowingSettings.toggle()
+            } label: {
+                Image(systemName: "gearshape")
+            }
+            .buttonStyle(.borderless)
+            .help("Einstellungen")
+            .popover(isPresented: $isShowingSettings, arrowEdge: .bottom) {
+                SettingsView(
+                    autoRefreshEnabled: $autoRefreshEnabled,
+                    autoRefreshInterval: $autoRefreshInterval,
+                    forceKillEnabled: $forceKillEnabled,
+                    ignoredProcessNames: $ignoredProcessNames,
+                    defaultFilter: $defaultFilter
+                )
+            }
 
             Button {
                 scanner.refresh()
@@ -168,6 +214,39 @@ struct ServerListView: View {
         .padding(.horizontal, 14)
         .padding(.vertical, 10)
     }
+
+    private func stopMessage(for server: ServerProcess) -> String {
+        var message = "\(server.processName) (PID \(server.pid)) auf Port \(server.port) wird beendet."
+
+        if forceKillEnabled {
+            message += " Falls der Prozess nicht reagiert, wird er hart beendet."
+        }
+
+        return message
+    }
+
+    private func startAutoRefresh() {
+        stopAutoRefresh()
+
+        guard autoRefreshEnabled else {
+            return
+        }
+
+        let interval = max(2.0, autoRefreshInterval)
+        refreshTask = Task { @MainActor in
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(interval))
+                if !Task.isCancelled {
+                    scanner.refresh()
+                }
+            }
+        }
+    }
+
+    private func stopAutoRefresh() {
+        refreshTask?.cancel()
+        refreshTask = nil
+    }
 }
 
 private struct ServerRow: View {
@@ -261,4 +340,56 @@ private struct ServerRow: View {
 
 #Preview {
     ServerListView(scanner: ServerScanner(), onQuit: {})
+}
+
+private struct SettingsView: View {
+    @Binding var autoRefreshEnabled: Bool
+    @Binding var autoRefreshInterval: Double
+    @Binding var forceKillEnabled: Bool
+    @Binding var ignoredProcessNames: String
+    @Binding var defaultFilter: String
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack {
+                Text("Einstellungen")
+                    .font(.headline)
+                Spacer()
+            }
+
+            Toggle("Auto-Refresh", isOn: $autoRefreshEnabled)
+
+            HStack {
+                Text("Intervall")
+                Spacer()
+                Stepper(
+                    "\(Int(autoRefreshInterval)) s",
+                    value: $autoRefreshInterval,
+                    in: 2...30,
+                    step: 1
+                )
+                .frame(width: 110)
+            }
+            .disabled(!autoRefreshEnabled)
+
+            Toggle("Hard-Kill nach Timeout", isOn: $forceKillEnabled)
+
+            Picker("Standardfilter", selection: $defaultFilter) {
+                ForEach(ServerFilter.allCases) { filter in
+                    Text(filter.title).tag(filter.rawValue)
+                }
+            }
+            .pickerStyle(.segmented)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text("Ignorierte Prozesse")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                TextField("prozess, anderer prozess", text: $ignoredProcessNames)
+                    .textFieldStyle(.roundedBorder)
+            }
+        }
+        .padding(16)
+        .frame(width: 320)
+    }
 }

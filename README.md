@@ -4,7 +4,7 @@ Native macOS menu bar app for running local development servers.
 
 ## Start
 
-Open `PortBar.xcodeproj` in Xcode and run the `ServerBar` scheme.
+Open `PortBar.xcodeproj` in Xcode and run the `PortBar` scheme.
 
 The app appears as PortBar only in the macOS menu bar. Click the server icon to see listening TCP processes. The default view shows likely development servers such as `node`, `bun`, `python`, `ruby`, `php`, `java`, `dotnet`, and similar processes. Switch to `Alle` to see every listener.
 
@@ -15,11 +15,20 @@ The app appears as PortBar only in the macOS menu bar. Click the server icon to 
 - Stop: sends `SIGTERM` to the process after confirmation.
 - Refresh: re-runs `lsof`.
 - Autostart: toggles PortBar as a macOS login item.
+- Settings: configure auto-refresh, hard-kill fallback, the default filter, and ignored process names.
 
 ## Development
 
 ```sh
 xcodegen generate
-xcodebuild -scheme ServerBar -configuration Debug build
-xcodebuild -scheme ServerBar -configuration Debug test
+xcodebuild -project PortBar.xcodeproj -scheme PortBar -configuration Debug build
+xcodebuild -project PortBar.xcodeproj -scheme PortBar -configuration Debug test
 ```
+
+## Package
+
+```sh
+scripts/package_release.sh
+```
+
+The script creates `dist/PortBar.zip`. For distribution outside your own Mac, sign and notarize the app with an Apple Developer ID certificate.

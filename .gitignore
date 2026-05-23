@@ -11,7 +11,9 @@ DerivedData/
 .build/
 
 # Distribution artifacts
+build/
 *.dSYM.zip
 *.dmg
 *.ipa
 *.pkg
+dist/

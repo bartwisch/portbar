@@ -67,7 +67,7 @@ final class ServerScanner: ObservableObject {
         NSPasteboard.general.setString(value, forType: .string)
     }
 
-    func stop(_ server: ServerProcess) {
+    func stop(_ server: ServerProcess, forceAfterDelay: Bool) {
         let result = Darwin.kill(server.pid, SIGTERM)
 
         guard result == 0 else {
@@ -76,8 +76,20 @@ final class ServerScanner: ObservableObject {
             return
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { [weak self] in
-            self?.refresh()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) { [weak self] in
+            guard let self else {
+                return
+            }
+
+            if forceAfterDelay && Darwin.kill(server.pid, 0) == 0 {
+                let forceResult = Darwin.kill(server.pid, SIGKILL)
+                if forceResult != 0 && errno != ESRCH {
+                    let message = String(cString: strerror(errno))
+                    self.errorMessage = "\(server.processName) konnte nicht hart beendet werden: \(message)"
+                }
+            }
+
+            self.refresh()
         }
     }
 
