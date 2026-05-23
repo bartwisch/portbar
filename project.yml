@@ -1,0 +1,47 @@
+name: PortBar
+options:
+  bundleIdPrefix: com.christoph
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+targets:
+  ServerBar:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - ServerBar
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.christoph.ServerBar
+        PRODUCT_NAME: PortBar
+        PRODUCT_MODULE_NAME: ServerBar
+        INFOPLIST_FILE: ServerBar/Info.plist
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+  ServerBarTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - ServerBarTests
+    dependencies:
+      - target: ServerBar
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.christoph.ServerBarTests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/PortBar.app/Contents/MacOS/PortBar"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  ServerBar:
+    build:
+      targets:
+        ServerBar: all
+        ServerBarTests: [test]
+    test:
+      targets:
+        - ServerBarTests

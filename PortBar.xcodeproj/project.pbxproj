@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183C5398F67D1825B805F6AE /* ServerBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD62981EB981842BA95FEB8 /* ServerBarApp.swift */; };
+		4B2729E2947845A468A20019 /* ServerScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60B891817C6D17F2A5ECAA9 /* ServerScanner.swift */; };
+		62DF7937C2FF50317885759E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25E35593586DB4DD147E8A /* AppDelegate.swift */; };
+		A0BAE0CF52DDF15CCEC7005C /* ServerProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02956912B23A755AAAA4DE78 /* ServerProcess.swift */; };
+		DCE0F01FF3790A1772DC06C7 /* LoginItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6882FC7F2F943C9A6D6DFC8 /* LoginItemController.swift */; };
+		DE0637BACF5FEF61DA6C82D5 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D321A03B091523A7542E75 /* ServerListView.swift */; };
+		F98B7155A9E68483FF05CB3C /* ServerScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E8583450EBBFF0A2D60571 /* ServerScannerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		472B492678733736E2C2F359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE584C46B4F7322B4E34DB99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD9B7611FC1E0DF44B819FA;
+			remoteInfo = ServerBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02956912B23A755AAAA4DE78 /* ServerProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerProcess.swift; sourceTree = "<group>"; };
+		3E9E9488672E76E238F3E31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4A6199D6AC7E88AFB60CF40C /* ServerBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E8583450EBBFF0A2D60571 /* ServerScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerScannerTests.swift; sourceTree = "<group>"; };
+		7A5748395ADA3A0EFE7D0560 /* ServerBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServerBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F25E35593586DB4DD147E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3D321A03B091523A7542E75 /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
+		D60B891817C6D17F2A5ECAA9 /* ServerScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerScanner.swift; sourceTree = "<group>"; };
+		DDD62981EB981842BA95FEB8 /* ServerBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerBarApp.swift; sourceTree = "<group>"; };
+		E6882FC7F2F943C9A6D6DFC8 /* LoginItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		094E9EC956E025C3AB7B872D /* ServerBar */ = {
+			isa = PBXGroup;
+			children = (
+				8F25E35593586DB4DD147E8A /* AppDelegate.swift */,
+				3E9E9488672E76E238F3E31E /* Info.plist */,
+				DDD62981EB981842BA95FEB8 /* ServerBarApp.swift */,
+				10068C81E253A9FA53FB98F0 /* Models */,
+				2BD6F9D2BE28945E5B23E51D /* Services */,
+				EDAB795988981118B26F3A6D /* Views */,
+			);
+			path = ServerBar;
+			sourceTree = "<group>";
+		};
+		10068C81E253A9FA53FB98F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02956912B23A755AAAA4DE78 /* ServerProcess.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16FF8B11FAFE5005B58D0FEE = {
+			isa = PBXGroup;
+			children = (
+				094E9EC956E025C3AB7B872D /* ServerBar */,
+				3F7D3FB1CB3852AA8209225E /* ServerBarTests */,
+				D3279B65E82BBFB2375BD5EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BD6F9D2BE28945E5B23E51D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E6882FC7F2F943C9A6D6DFC8 /* LoginItemController.swift */,
+				D60B891817C6D17F2A5ECAA9 /* ServerScanner.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3F7D3FB1CB3852AA8209225E /* ServerBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				65E8583450EBBFF0A2D60571 /* ServerScannerTests.swift */,
+			);
+			path = ServerBarTests;
+			sourceTree = "<group>";
+		};
+		D3279B65E82BBFB2375BD5EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A6199D6AC7E88AFB60CF40C /* ServerBar.app */,
+				7A5748395ADA3A0EFE7D0560 /* ServerBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDAB795988981118B26F3A6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3D321A03B091523A7542E75 /* ServerListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		629E402C7542984C41FA0276 /* ServerBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8A842C353B60805F6EC6079 /* Build configuration list for PBXNativeTarget "ServerBarTests" */;
+			buildPhases = (
+				655636F1500E1DCCA66E6E4A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44428328E4F94F59BBFB9FD /* PBXTargetDependency */,
+			);
+			name = ServerBarTests;
+			packageProductDependencies = (
+			);
+			productName = ServerBarTests;
+			productReference = 7A5748395ADA3A0EFE7D0560 /* ServerBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFD9B7611FC1E0DF44B819FA /* ServerBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72EBAC892D674C34AB424D0 /* Build configuration list for PBXNativeTarget "ServerBar" */;
+			buildPhases = (
+				9B161025619A7758BCAFB099 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServerBar;
+			packageProductDependencies = (
+			);
+			productName = ServerBar;
+			productReference = 4A6199D6AC7E88AFB60CF40C /* ServerBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE584C46B4F7322B4E34DB99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					629E402C7542984C41FA0276 = {
+						ProvisioningStyle = Manual;
+					};
+					CFD9B7611FC1E0DF44B819FA = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 60234275A7C7AB727BC40ACA /* Build configuration list for PBXProject "PortBar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 16FF8B11FAFE5005B58D0FEE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D3279B65E82BBFB2375BD5EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFD9B7611FC1E0DF44B819FA /* ServerBar */,
+				629E402C7542984C41FA0276 /* ServerBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		655636F1500E1DCCA66E6E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98B7155A9E68483FF05CB3C /* ServerScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B161025619A7758BCAFB099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DF7937C2FF50317885759E /* AppDelegate.swift in Sources */,
+				DCE0F01FF3790A1772DC06C7 /* LoginItemController.swift in Sources */,
+				183C5398F67D1825B805F6AE /* ServerBarApp.swift in Sources */,
+				DE0637BACF5FEF61DA6C82D5 /* ServerListView.swift in Sources */,
+				A0BAE0CF52DDF15CCEC7005C /* ServerProcess.swift in Sources */,
+				4B2729E2947845A468A20019 /* ServerScanner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D44428328E4F94F59BBFB9FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD9B7611FC1E0DF44B819FA /* ServerBar */;
+			targetProxy = 472B492678733736E2C2F359 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		122CF0ABFAA7AC924B492B09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.ServerBarTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortBar.app/Contents/MacOS/PortBar";
+			};
+			name = Debug;
+		};
+		42F1FEEB3F3771E4E6A10EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.ServerBarTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortBar.app/Contents/MacOS/PortBar";
+			};
+			name = Release;
+		};
+		5A5C01CC9F8A55D454B5A95C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		6FF555A82CC50FB0A5CD82DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		799C46A27EABFAC78BF307B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = ServerBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.ServerBar;
+				PRODUCT_MODULE_NAME = ServerBar;
+				PRODUCT_NAME = PortBar;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		94F935CD2A5DE585350F97AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = ServerBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christoph.ServerBar;
+				PRODUCT_MODULE_NAME = ServerBar;
+				PRODUCT_NAME = PortBar;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60234275A7C7AB727BC40ACA /* Build configuration list for PBXProject "PortBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5C01CC9F8A55D454B5A95C /* Debug */,
+				6FF555A82CC50FB0A5CD82DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D8A842C353B60805F6EC6079 /* Build configuration list for PBXNativeTarget "ServerBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				122CF0ABFAA7AC924B492B09 /* Debug */,
+				42F1FEEB3F3771E4E6A10EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F72EBAC892D674C34AB424D0 /* Build configuration list for PBXNativeTarget "ServerBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799C46A27EABFAC78BF307B7 /* Debug */,
+				94F935CD2A5DE585350F97AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE584C46B4F7322B4E34DB99 /* Project object */;
+}
